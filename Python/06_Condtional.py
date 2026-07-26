@@ -89,23 +89,121 @@
 # num=input("Enter a number : ")
 # print(len(num))
 
-num=int(input("Enter a number : "))
-i=0
-while i<=num:
-    print(i)
+# num = int(input("Enter a number: "))
+
+# count = 0
+
+# while num > 0:
+#     count += 1
+#     num = num // 10
+
+# print("Total digits:", count)
     
 # ---------------------------------------------#
+# Practice Questions
+# Write programs using a for loop.
 
 
+# # Print numbers from 1 to 10.
+# for i in range(1,11):
+#     print(i)
 
 
+# # Print even numbers from 2 to 20.
+# for i in range(2,21,2):
+#     print(i)
+
+
+# Print the multiplication table of any number.
+# num=int(input("Enter Table number to print : "))
+# for i in range(1,11):
+#     print(f"{num} * {i} = {num*i}")
 
 # ---------------------------------------------#
 
 
+# *
+# **
+# ***
+# ****
+# *****
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print("*",end="")
+#     print()
 
 
+# ---------------------------------------------#\
+
+# *****
+# ****
+# ***
+# **
+# *
+
+# for i in range(1, 6):
+#     for j in range(5, i - 1, -1):
+#         print("*", end="")
+#     print()
 
 
 
 # ---------------------------------------------#
+# 1
+# 12
+# 123
+# 1234
+# 12345
+# for i in range(1,6):
+#     for j in range(1,i+1):
+#         print(j,end="")
+#     print()
+
+
+  # ---------------------------------------------#
+
+
+
+# 12345
+# 1234
+# 123
+# 12
+# 1
+
+# for i in range(1, 6):
+#     for j in range(1,7-i):
+#         print(j, end="")
+#     print()
+
+
+
+
+    # ---------------------------------------------#
+
+#     *
+#    **
+#   ***
+#  ****
+# *****
+
+for i in range(1,6):
+    for j in range(1, 6 - i):
+        print(" ",end="")
+    for j in range(1,i+1):
+        print("*",end="")
+    print()
+   
+
+    # ---------------------------------------------#
+
+
+
+
+
+    # ---------------------------------------------#
+
+
+
+
+
+    # ---------------------------------------------#
