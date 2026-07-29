@@ -1,5 +1,7 @@
 
-
+    # ---------------------------------------------#
+            #FUNCTION#
+    # ---------------------------------------------#
 # def Hello():
 #     print("Welcome to Python")
 
@@ -7,6 +9,7 @@
 # Hello()
 # Hello()
 
+    # ---------------------------------------------#
 
 # def student():
 #     name = "Yogesh"
@@ -20,6 +23,7 @@
 # student()
 
 
+    # ---------------------------------------------#
 # def calculator():
 #     print("10 + 20 =", 10 + 20)
 #     print("10 * 20 =", 10 * 20)
@@ -27,6 +31,7 @@
 # calculator()
 
 
+    # ---------------------------------------------#
 
 # def greet(name):
 #     print("Hello",name)
@@ -44,6 +49,7 @@
 
 
 
+    # ---------------------------------------------#
 
 # def square(num):
 #     return num*num
@@ -53,6 +59,7 @@
 
 
 
+    # ---------------------------------------------#
 
 # def cube(num):
 #     return num*num*num
@@ -61,6 +68,7 @@
 # print(result)
 
 
+    # ---------------------------------------------#
 
 
 # def largest(a,b):
@@ -123,6 +131,10 @@
 # names = ["yogesh", "rahul", "amit"]
 # result=list(map(lambda x:len(x),names))
 # print(result)
+
+
+
+
   # ------------------
   # FILTER FUNCTION 
 
@@ -170,15 +182,81 @@
 # result=reduce(lambda a,b: a if a<b else b,numbers)
 # print(result)
 
-from functools import reduce
-numbers = [25, 80, 15, 90, 60]
-result=reduce(lambda a,b:a if a>b else b,numbers)
-print(result)
 
+# # Without using sum(), write a program using reduce() to find the largest number in this list:
+# from functools import reduce
+# numbers = [25, 80, 15, 90, 60]
+# result=reduce(lambda a,b:a if a>b else b,numbers)
+# print(result)
+
+
+
+
+
+    # ---------------------------------------------#
+        # *args (Variable Number of Arguments)
+
+ 
    # ---------------------------------------------#
 
+# # Write a function using *args that prints all numbers.
+# def numbers(*num):
+#     for n in num:
+#         print(n)
+# numbers(10,20,30,40)
 
 
+# # Write a function using *args that returns the sum of all numbers.
+# def add(*number):
+#     total = 0
+#     for i in number:
+#         total += i
+#     return total
+
+# result = add(5, 10, 15)
+# print(result)
+
+
+
+# Write a function using *args that finds the largest number.
+# from functools import reduce
+
+# def largest(*num):
+#     result = reduce(lambda a, b: a if a > b else b, num)
+#     return result
+
+# print(largest(10, 50, 30, 80, 40))
+        
+
+# def largest(*num):
+#     return max(num)
+# print(largest(10, 50, 30, 80, 40))
+
+
+     # ---------------------------------------------#
+
+                # **kwargs (Keyword Arguments)
+
+    # ---------------------------------------------#
+# Write a function using **kwargs that prints the entire dictionary.
+def show(**details):
+    print(details)
+show(name="Yogesh", age=20, city="Nagpur")
+
+
+
+# Print each key and value.
+def show(**details):
+    for key,value in details.items():
+        print(key,":",value)
+show(name="Yogesh", age=20, city="Nagpur")
+
+
+
+# Write a function that prints only the "course" value.
+def student(**data):
+    print(data["course"])
+student(name="Yogesh", age=20, course="Data Science")
 
     # ---------------------------------------------#
 
@@ -186,4 +264,4 @@ print(result)
 
 
 
-     # ---------------------------------------------#
+        # ---------------------------------------------#
