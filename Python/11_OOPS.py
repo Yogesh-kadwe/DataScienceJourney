@@ -120,14 +120,85 @@
 
 
 
-class Student():
-    def __init__(self,name):
-        self.__name=name
-    def show_name(self):
-        print(f"Name : {self.__name}")
+# class Student():
+#     def __init__(self,name):
+#         self.__name=name
+#     def show_name(self):
+#         print(f"Name : {self.__name}")
 
-s1=Student("Yogesh")
-s1.show_name()
+# s1=Student("Yogesh")
+# s1.show_name()
+
+
+
+# class BankAccount:
+
+#     def __init__(self, balance):
+#         self.__balance = balance
+
+#     def deposit(self, amount):
+#         self.__balance += amount
+
+#     def show_balance(self):
+#         return self.__balance
+
+
+# account = BankAccount(5000)
+
+# account.deposit(2000)
+
+# print("Balance:", account.show_balance())
+
+
+
+
+
+
+
+
+
+# class Employee():
+#     def __init__(self):
+#         self.__salary="50000"
+#     def show_salary(self):
+#         return self.__salary
+
+
+# emp=Employee()
+# print(emp.show_salary())
+
+
+
+
+
+
+
+
+# class Employee:
+
+#     def __init__(self):
+#         self.__salary = 50000
+
+#     def set_salary(self, salary):
+
+#         if salary > 0:
+#             self.__salary = salary
+
+#         else:
+#             print("Invalid Salary")
+
+#     def show_salary(self):
+#         return self.__salary
+
+
+# emp = Employee()
+
+# emp.set_salary(400000)
+
+# print(emp.show_salary())
+
+
+
 
 
 
@@ -136,8 +207,13 @@ class BankAccount:
     def __init__(self, balance):
         self.__balance = balance
 
-    def deposit(self, amount):
-        self.__balance += amount
+    def withdraw(self,withdraw):
+        self.withdraw=withdraw
+        if balance>=self.withdraw:
+            balance-=self.withdraw
+        else:
+            print("Insufficeint Balance")
+
 
     def show_balance(self):
         return self.__balance
@@ -145,55 +221,7 @@ class BankAccount:
 
 account = BankAccount(5000)
 
-account.deposit(2000)
+account.withdraw(2000)
 
 print("Balance:", account.show_balance())
-
-
-
-
-
-
-
-
-
-class Employee():
-    def __init__(self):
-        self.__salary="50000"
-    def show_salary(self):
-        return self.__salary
-
-
-emp=Employee()
-print(emp.show_salary())
-
-
-
-
-
-
-
-
-class Employee:
-
-    def __init__(self):
-        self.__salary = 50000
-
-    def set_salary(self, salary):
-
-        if salary > 0:
-            self.__salary = salary
-
-        else:
-            print("Invalid Salary")
-
-    def show_salary(self):
-        return self.__salary
-
-
-emp = Employee()
-
-emp.set_salary(400000)
-
-print(emp.show_salary())
 
