@@ -73,34 +73,127 @@
 # print(e2.name , e2.salary)
 
 
-# class Student():
-#     def __init__(self,name):
-#         self.name=name
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
 
 #     def greet(self):
-#         print("Hello, I am Yogesh")
+#         print(f"Hello, I am {self.name}")
 
-# s1=Student("Yogesh")
+# s1 = Student("Yogesh")
 # s1.greet()
 
 
 
-class Calculator():
-    def add(self,num1,num2):
-        self.num1=num1
-        self.num2=num2
-        num3=num1+num2
-        print("Addition : ",num3)
-
-c1=Calculator()
-c1.add(20,30)
 
 
-class Rectangle():
-    def area(self,length,width):
-        self.length=length
-        self.width=width
-        print("Area of Rectangle : ",length*width)
 
-r1=Rectangle()
-r1.area(20,13)
+
+# class Calculator:
+
+#     def __init__(self, num1, num2):
+#         self.num1 = num1
+#         self.num2 = num2
+
+#     def add(self):
+#         print("Addition:", self.num1 + self.num2)
+
+# c1 = Calculator(20, 30)
+# c1.add()
+
+
+
+
+
+# class Rectangle:
+
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+
+#     def area(self):
+#         print("Area:", self.length * self.width)
+
+# r1 = Rectangle(20, 13)
+# r1.area()
+
+
+
+
+class Student():
+    def __init__(self,name):
+        self.__name=name
+    def show_name(self):
+        print(f"Name : {self.__name}")
+
+s1=Student("Yogesh")
+s1.show_name()
+
+
+
+class BankAccount:
+
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def deposit(self, amount):
+        self.__balance += amount
+
+    def show_balance(self):
+        return self.__balance
+
+
+account = BankAccount(5000)
+
+account.deposit(2000)
+
+print("Balance:", account.show_balance())
+
+
+
+
+
+
+
+
+
+class Employee():
+    def __init__(self):
+        self.__salary="50000"
+    def show_salary(self):
+        return self.__salary
+
+
+emp=Employee()
+print(emp.show_salary())
+
+
+
+
+
+
+
+
+class Employee:
+
+    def __init__(self):
+        self.__salary = 50000
+
+    def set_salary(self, salary):
+
+        if salary > 0:
+            self.__salary = salary
+
+        else:
+            print("Invalid Salary")
+
+    def show_salary(self):
+        return self.__salary
+
+
+emp = Employee()
+
+emp.set_salary(400000)
+
+print(emp.show_salary())
+
