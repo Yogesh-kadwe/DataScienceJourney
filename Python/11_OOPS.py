@@ -227,56 +227,114 @@
 
 
 
+# class Person:
+#     def show_name(self):
+#         print("Name : Yogesh")
+
+# class Student(Person):
+#     def study(self):
+#         print("Studying Python")
+
+# obj=Student()
+# obj.show_name()
+# obj.study()
+
+
+
+
+
+
+
+# class Father:
+#     def money(self):
+#         print("Money is avalilable")
+
+# class Mother(Father):
+#     def care(self):
+#         print("mother care for child")
+
+# class Child(Mother):
+#     print("child class")
+
+# obj=Child()
+# obj.money()
+# obj.care()
+
+
+
+
+# class Animal:
+#     def eat(self):
+#         print("Lion eats apple")
+
+# class Dog(Animal):
+#     def bark(self):
+#         print("Dog is barking")
+
+# class Puppy(Animal):
+#     def play(self):
+#         print("Puppy is Playing")
+
+# obj=Puppy()
+# obj2=Dog()
+# obj.eat()
+# obj2.bark()
+# obj.play()
+
+
+
+
+
+
+
+
 class Person:
-    def show_name(self):
-        print("Name : Yogesh")
+    def __init__(self):
+        print("Person Constructor")
 
 class Student(Person):
-    def study(self):
-        print("Studying Python")
+    def __init__(self):
+        super().__init__()
+        print("Student Cnstructor")
 
 obj=Student()
-obj.show_name()
-obj.study()
 
 
 
-
-
-
-
-class Father:
-    def money(self):
-        print("Money is avalilable")
-
-class Mother(Father):
-    def care(self):
-        print("mother care for child")
-
-class Child(Mother):
-    print("child class")
-
-obj=Child()
-obj.money()
-obj.care()
 
 
 
 
 class Animal:
     def eat(self):
-        print("Lion eats apple")
+        print("Animal is eating")
 
 class Dog(Animal):
-    def bark(self):
-        print("Dog is barking")
+    def eat(self):
+        super().eat()
+        print("Dog is eating")
 
-class Puppy(Animal):
-    def play(self):
-        print("Puppy is Playing")
-
-obj=Puppy()
-obj2=Dog()
+obj=Dog()
 obj.eat()
-obj2.bark()
-obj.play()
+
+
+
+
+class Person:
+    def __init__(self,name):
+        self.name=name
+
+class Student(Person):
+    def __init__(self,name,course):
+        super().__init__()
+        self.course=course
+
+
+    def show(self,name,course):
+        print(f"Name : {self.name}")
+        print(f"Course : {self.course}")
+
+obj=Student()
+obj.show("Yogesh","Data Science")
+
+
