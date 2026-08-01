@@ -201,27 +201,82 @@
 
 
 
+# class BankAccount:
 
-class BankAccount:
+#     def __init__(self, balance):
+#         self.__balance = balance
 
-    def __init__(self, balance):
-        self.__balance = balance
+#     def withdraw(self, amount):
+#         if self.__balance >= amount:
+#             self.__balance -= amount
+#         else:
+#             print("Insufficient Balance")
 
-    def withdraw(self,withdraw):
-        self.withdraw=withdraw
-        if balance>=self.withdraw:
-            balance-=self.withdraw
-        else:
-            print("Insufficeint Balance")
-
-
-    def show_balance(self):
-        return self.__balance
+#     def show_balance(self):
+#         return self.__balance
 
 
-account = BankAccount(5000)
+# account = BankAccount(5000)
 
-account.withdraw(2000)
+# account.withdraw(2000)
 
-print("Balance:", account.show_balance())
+# print("Balance:", account.show_balance())
 
+
+
+
+
+
+class Person:
+    def show_name(self):
+        print("Name : Yogesh")
+
+class Student(Person):
+    def study(self):
+        print("Studying Python")
+
+obj=Student()
+obj.show_name()
+obj.study()
+
+
+
+
+
+
+
+class Father:
+    def money(self):
+        print("Money is avalilable")
+
+class Mother(Father):
+    def care(self):
+        print("mother care for child")
+
+class Child(Mother):
+    print("child class")
+
+obj=Child()
+obj.money()
+obj.care()
+
+
+
+
+class Animal:
+    def eat(self):
+        print("Lion eats apple")
+
+class Dog(Animal):
+    def bark(self):
+        print("Dog is barking")
+
+class Puppy(Animal):
+    def play(self):
+        print("Puppy is Playing")
+
+obj=Puppy()
+obj2=Dog()
+obj.eat()
+obj2.bark()
+obj.play()
