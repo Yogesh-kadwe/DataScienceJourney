@@ -288,53 +288,100 @@
 
 
 
-class Person:
-    def __init__(self):
-        print("Person Constructor")
+# class Person:
+#     def __init__(self):
+#         print("Person Constructor")
 
-class Student(Person):
-    def __init__(self):
-        super().__init__()
-        print("Student Cnstructor")
+# class Student(Person):
+#     def __init__(self):
+#         super().__init__()
+#         print("Student Cnstructor")
 
-obj=Student()
+# obj=Student()
 
 
 
+
+
+
+
+# class Animal:
+#     def eat(self):
+#         print("Animal is eating")
+
+# class Dog(Animal):
+#     def eat(self):
+#         super().eat()
+#         print("Dog is eating")
+
+# obj=Dog()
+# obj.eat()
+
+
+# class Person:
+
+#     def __init__(self, name):
+#         self.name = name
+
+
+# class Student(Person):
+
+#     def __init__(self, name, course):
+#         super().__init__(name)
+#         self.course = course
+
+#     def show(self):
+#         print("Name :", self.name)
+#         print("Course :", self.course)
+
+
+# obj = Student("Yogesh", "Data Science")
+
+# obj.show()
+
+
+
+
+# Method Overriding
+class Vehicle:
+    def start(self):
+        print("Vehicle Started")
+
+class Car:
+    def start(self):
+        print("Car Started")
+
+obj=Car()
+obj.start()
+
+
+
+
+
+
+
+class Employee:
+    def work(self):
+        print("Employee Working")
+
+class Developer:
+    def work(self):
+        print("Developer Writing Code")
+
+obj=Developer()
+obj.work()
 
 
 
 
 class Animal:
     def eat(self):
-        print("Animal is eating")
+        print("Animal Eating")
 
 class Dog(Animal):
     def eat(self):
         super().eat()
-        print("Dog is eating")
+        print("Dog Eating")
 
 obj=Dog()
 obj.eat()
-
-
-
-
-class Person:
-    def __init__(self,name):
-        self.name=name
-
-class Student(Person):
-    def __init__(self,name,course):
-        super().__init__()
-        self.course=course
-
-
-    def show(self,name,course):
-        print(f"Name : {self.name}")
-        print(f"Course : {self.course}")
-
-obj=Student()
-obj.show("Yogesh","Data Science")
-
-
