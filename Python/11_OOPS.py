@@ -342,46 +342,115 @@
 
 
 
-# Method Overriding
-class Vehicle:
-    def start(self):
-        print("Vehicle Started")
+# # Method Overriding
+# class Vehicle:
 
-class Car:
-    def start(self):
-        print("Car Started")
-
-obj=Car()
-obj.start()
+#     def start(self):
+#         print("Vehicle Started")
 
 
+# class Car(Vehicle):
+
+#     def start(self):
+#         print("Car Started")
+
+
+# obj = Car()
+
+# obj.start()
+
+
+# class Employee:
+
+#     def work(self):
+#         print("Employee Working")
+
+
+# class Developer(Employee):
+
+#     def work(self):
+#         print("Developer Writing Code")
+
+
+# obj = Developer()
+
+# obj.work()
+
+
+# class Animal:
+#     def eat(self):
+#         print("Animal Eating")
+
+# class Dog(Animal):
+#     def eat(self):
+#         super().eat()
+#         print("Dog Eating")
+
+# obj=Dog()
+# obj.eat()
 
 
 
 
-
-class Employee:
-    def work(self):
-        print("Employee Working")
-
-class Developer:
-    def work(self):
-        print("Developer Writing Code")
-
-obj=Developer()
-obj.work()
-
-
-
+# Polymorphism  #
 
 class Animal:
-    def eat(self):
-        print("Animal Eating")
+    def sound(self):
+        print("Animal")
 
 class Dog(Animal):
-    def eat(self):
-        super().eat()
-        print("Dog Eating")
+    def sound(self):
+        print("Dog Barks")
 
+class Cat(Animal):
+    def sound(self):
+        print("Cat Meows")
+
+obj1=Cat()
 obj=Dog()
-obj.eat()
+obj.sound()
+obj1.sound()
+
+
+
+
+
+class Shape:
+    def draw(self):
+        pass
+
+class Circle(Shape):
+
+        print("Circle")
+
+class Rectangle(Shape):
+        print("Rectangle")
+
+def draw(Shape):
+     Shape.draw()
+     
+obj=Rectangle()
+obj2=Circle()
+draw(obj)
+draw(obj2)
+
+
+
+
+
+
+class Vehicle:
+     pass
+
+class Car(Vehicle):
+     def move(self):
+          print("Car is Moving")
+
+class Bike(Vehicle):
+     def move(self):
+          print("Bike is Moving")
+
+obj=Car()
+obj2=Bike()
+obj.move()
+obj2.move()
