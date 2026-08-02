@@ -476,29 +476,74 @@
 
 
 
-class Employee:
-    company="Google"
-    def __init__(self):
-        self.name="Amit"
+# class Employee:
+#     company="Google"
+#     def __init__(self):
+#         self.name="Amit"
 
-e1=Employee()
-e2=Employee()
-e2.name="Priya"
-print(e1.name)
-print(e2.name)
-
-
+# e1=Employee()
+# e2=Employee()
+# e2.name="Priya"
+# print(e1.name)
+# print(e2.name)
 
 
 
 
-class Car:
-    wheels = 4
-    def __init__(self):
-        self.brand="Toyata"
 
-c1=Car()
-c2=Car()
-c2.brand="BMW"
-print(c1.brand,c1.wheels)
-print(c2.brand,c2.wheels)
+
+# class Car:
+#     wheels = 4
+#     def __init__(self):
+#         self.brand="Toyata"
+
+# c1=Car()
+# c2=Car()
+# c2.brand="BMW"
+# print(c1.brand,c1.wheels)
+# print(c2.brand,c2.wheels)
+
+
+
+
+
+
+
+
+
+
+
+# Topic: Instance Method vs @classmethod vs @staticmethod
+
+
+
+class Student:
+    def __init__(self,name):
+        self.name=name
+
+    def show_name(self):
+        print(self.name)
+
+obj=Student("Yogesh")
+obj.show_name()
+
+
+
+
+
+class Student:
+    college="SBJITMR"
+    @classmethod
+    def show_college(cls):
+        print(cls.college)
+
+Student.show_college()
+
+
+
+class Calculator:
+    @staticmethod
+    def multiiply(a,b):
+        print(a*b)
+
+Calculator.multiiply(45,54)
