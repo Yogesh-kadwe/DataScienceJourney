@@ -394,63 +394,111 @@
 
 # Polymorphism  #
 
-class Animal:
-    def sound(self):
-        print("Animal")
+# class Animal:
+#     def sound(self):
+#         print("Animal")
 
-class Dog(Animal):
-    def sound(self):
-        print("Dog Barks")
+# class Dog(Animal):
+#     def sound(self):
+#         print("Dog Barks")
 
-class Cat(Animal):
-    def sound(self):
-        print("Cat Meows")
+# class Cat(Animal):
+#     def sound(self):
+#         print("Cat Meows")
 
-obj1=Cat()
-obj=Dog()
-obj.sound()
-obj1.sound()
-
-
-
-
-
-class Shape:
-    def draw(self):
-        pass
-
-class Circle(Shape):
-
-        print("Circle")
-
-class Rectangle(Shape):
-        print("Rectangle")
-
-def draw(Shape):
-     Shape.draw()
-     
-obj=Rectangle()
-obj2=Circle()
-draw(obj)
-draw(obj2)
+# obj1=Cat()
+# obj=Dog()
+# obj.sound()
+# obj1.sound()
 
 
 
 
+# class Shape:
+#     def draw(self):
+#         pass
+
+# class Circle(Shape):
+#     def draw(self):
+#         print("Drawing Circle")
+
+# class Rectangle(Shape):
+#     def draw(self):
+#         print("Drawing Rectangle")
+
+# def draw_shape(shape):
+#     shape.draw()
+
+# obj1 = Circle()
+# obj2 = Rectangle()
+
+# draw_shape(obj1)
+# draw_shape(obj2)
 
 
-class Vehicle:
-     pass
 
-class Car(Vehicle):
-     def move(self):
-          print("Car is Moving")
 
-class Bike(Vehicle):
-     def move(self):
-          print("Bike is Moving")
+# class Vehicle:
+#      pass
 
-obj=Car()
-obj2=Bike()
-obj.move()
-obj2.move()
+# class Car(Vehicle):
+#      def move(self):
+#           print("Car is Moving")
+
+# class Bike(Vehicle):
+#      def move(self):
+#           print("Bike is Moving")
+
+# obj = Car()
+# obj2 = Bike()
+
+# obj.move()
+# obj2.move()
+
+
+
+# # Class and Instance Variable
+
+# class Student:
+#     college="SBJITMR"
+
+#     def __init__(self):
+#         self.name="Yogesh"
+        
+
+# s1=Student()
+# s2=Student()
+# s2.name="Rahul"
+# print(s1.name,s1.college)
+# print(s2.name,s2.college)
+
+
+
+
+
+class Employee:
+    company="Google"
+    def __init__(self):
+        self.name="Amit"
+
+e1=Employee()
+e2=Employee()
+e2.name="Priya"
+print(e1.name)
+print(e2.name)
+
+
+
+
+
+
+class Car:
+    wheels = 4
+    def __init__(self):
+        self.brand="Toyata"
+
+c1=Car()
+c2=Car()
+c2.brand="BMW"
+print(c1.brand,c1.wheels)
+print(c2.brand,c2.wheels)
