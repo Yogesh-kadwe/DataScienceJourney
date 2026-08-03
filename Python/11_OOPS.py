@@ -513,7 +513,41 @@
 
 
 
-# Topic: Instance Method vs @classmethod vs @staticmethod
+# # Topic: Instance Method vs @classmethod vs @staticmethod
+
+
+
+# class Student:
+#     def __init__(self,name):
+#         self.name=name
+
+#     def show_name(self):
+#         print(self.name)
+
+# obj=Student("Yogesh")
+# obj.show_name()
+
+
+
+
+
+# class Student:
+#     college="SBJITMR"
+#     @classmethod
+#     def show_college(cls):
+#         print(cls.college)
+
+# Student.show_college()
+
+
+
+# class Calculator:
+#     @staticmethod
+#     def multiiply(a,b):
+#         print(a*b)
+
+# Calculator.multiiply(45,54)
+
 
 
 
@@ -521,29 +555,38 @@ class Student:
     def __init__(self,name):
         self.name=name
 
-    def show_name(self):
-        print(self.name)
 
-obj=Student("Yogesh")
-obj.show_name()
+    def __str__(self):
+        return f"Student Name: {self.name}"
 
+s=Student("Yogesh")
 
-
-
-
-class Student:
-    college="SBJITMR"
-    @classmethod
-    def show_college(cls):
-        print(cls.college)
-
-Student.show_college()
+print(s)
 
 
 
-class Calculator:
-    @staticmethod
-    def multiiply(a,b):
-        print(a*b)
 
-Calculator.multiiply(45,54)
+
+
+
+class Book:
+    def __len__(self):
+        return 250
+b=Book()
+print(len(b))
+
+
+
+
+
+
+class Number:
+    def __init__(self,value):
+        self.value=value
+
+    def __add__(self,other):
+        return self.value+other.value
+
+n=Number(52)
+n1=Number(45)
+print(n+n1)
