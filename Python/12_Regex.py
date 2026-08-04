@@ -176,15 +176,92 @@
 
 
 
-# 2️⃣ Mobile Number Validation
-# Assume a valid mobile number has exactly 10 digits.
-import re
+# # 2️⃣ Mobile Number Validation
+# # Assume a valid mobile number has exactly 10 digits.
+# import re
 
-mobile = input("Enter Mobile Number: ")
+# mobile = input("Enter Mobile Number: ")
 
-pattern = r"^\d{10}$"
+# pattern = r"^\d{10}$"
 
-if re.match(pattern, mobile):
-    print("Valid Mobile Number")
-else:
-    print("Invalid Mobile Number")
+# if re.match(pattern, mobile):
+#     print("Valid Mobile Number")
+# else:
+#     print("Invalid Mobile Number")
+
+
+
+
+
+
+# # 3️⃣ Password Validation (Basic)
+
+# # Rules:
+# # Minimum 8 characters
+# # At least one uppercase letter
+# # At least one lowercase letter
+# # At least one digit
+
+
+# import re
+
+# password = input("Enter Password: ")
+
+# pattern = r"^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}$"
+
+# if re.match(pattern, password):
+#     print("Strong Password")
+# else:
+#     print("Weak Password")
+
+
+
+
+
+
+
+
+
+#------------------------------------------------------------#
+
+#📘 Topic: isinstance() and issubclass()#
+
+
+
+age=20
+print(isinstance(age,int))
+
+
+
+class Student:
+    pass
+s=Student()
+print(isinstance(s,Student))
+
+
+
+
+class Animal:
+    pass
+
+class Dog(Animal):
+    pass
+
+
+print(issubclass(Dog, Animal))
+
+
+
+
+
+
+class Animal:
+    pass
+
+class Dog(Animal):
+    pass
+
+d = Dog()
+print(isinstance(d, Animal))
+
+
