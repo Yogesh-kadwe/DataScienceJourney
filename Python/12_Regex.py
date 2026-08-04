@@ -114,11 +114,77 @@
 
 
 
+# 🎤 Most Asked Interview Questions
+# Q1. What does \d represent?
+# ✅ Ready Interview Answer
+
+# "\d matches any single digit from 0 to 9."
+
+# Q2. Why do we write r"..." in Regex?
+# ✅ Ready Interview Answer
+
+# "The r creates a raw string, preventing 
+# Python from interpreting backslashes as escape characters. 
+# This makes regex patterns more reliable and readable."
+
+# Q3. What does ^ do?
+# ✅ Ready Interview Answer
+
+# "^ matches the beginning of a string."
+
+# Q4. What does $ do?
+# ✅ Ready Interview Answer
+
+# "$ matches the end of a string."
 
 
+
+
+
+
+
+
+
+
+
+# import re
+# text="I Love Data Science"
+# if re.findall(r"Science$",text):
+#     print("Ends with Science")
+# else:
+#     print("Not Ends with Science")
+
+
+
+
+
+
+
+# # 1️⃣ Email Validation
+# # Check whether an email is valid.
+# import re
+
+# email = input("Enter Email: ")
+
+# pattern = r"^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{2,}$"
+
+# if re.match(pattern, email):
+#     print("Valid Email")
+# else:
+#     print("Invalid Email")
+
+
+
+
+# 2️⃣ Mobile Number Validation
+# Assume a valid mobile number has exactly 10 digits.
 import re
-text="I Love Data Science"
-if re.findall(r"Science$",text):
-    print("Starts with Python")
+
+mobile = input("Enter Mobile Number: ")
+
+pattern = r"^\d{10}$"
+
+if re.match(pattern, mobile):
+    print("Valid Mobile Number")
 else:
-    print("Not Started with Python")
+    print("Invalid Mobile Number")
