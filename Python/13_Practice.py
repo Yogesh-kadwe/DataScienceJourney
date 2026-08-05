@@ -29,13 +29,29 @@
 
 
 
-# Write a program to find the largest of three numbers. 
-num1=int(input("Enter first number :"))
-num2=int(input("Enter second number :"))
-num3=int(input("Enter third number :"))
-if num1>num2 and num1>num3:
-    print(f"{num1} is largest among three")
-elif num2>num1 and num2>num3:
-    print(f"{num2} is largest among three")
-else:
-    print(f"{num3} is largest among three")
+# # Write a program to find the largest of three numbers. 
+# num1=int(input("Enter first number :"))
+# num2=int(input("Enter second number :"))
+# num3=int(input("Enter third number :"))
+# if num1>num2 and num1>num3:
+#     print(f"{num1} is largest among three")
+# elif num2>num1 and num2>num3:
+#     print(f"{num2} is largest among three")
+# else:
+#     print(f"{num3} is largest among three")
+
+
+
+
+
+
+# Write a program to calculate the factorial of a number.
+num=int(input("Enter a number : "))
+fact=1
+i = 0
+while i <num:
+    i+=1
+    fact *= i
+
+print("the factorial of this number is : ",fact)
+
