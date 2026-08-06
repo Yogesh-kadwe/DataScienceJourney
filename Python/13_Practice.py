@@ -107,9 +107,19 @@
 
 
 
-# Write a program to reverse a string without using slicing ([::-1]).
-text=input("Enter a string : ")
-rev=""
-for ch in text:
-    rev=ch+rev
-print(rev)
+# # Write a program to reverse a string without using slicing ([::-1]).
+# text=input("Enter a string : ")
+# rev=""
+# for ch in text:
+#     rev=ch+rev
+# print(rev)
+
+
+# Count the Number of Vowels
+text=input("Enter the String : ")
+count=0
+for i in text:
+    if i in "AEIOUaeiou":
+        count+=1
+print(count)
+    
