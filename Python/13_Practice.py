@@ -108,7 +108,8 @@
 
 
 # Write a program to reverse a string without using slicing ([::-1]).
-
-text=input("Enter a String : ")
-for i in range(len(text)):
-    print((i))
+text=input("Enter a string : ")
+rev=""
+for ch in text:
+    rev=ch+rev
+print(rev)
