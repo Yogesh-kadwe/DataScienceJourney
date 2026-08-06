@@ -96,10 +96,19 @@
 
 
 
-# Easy method prime number
-for num in range(2, 101):
-    for i in range(2, int(num**0.5) + 1):
-        if num % i == 0:
-            break
-    else:
-        print(num, end=" ")
+# # Easy method prime number
+# for num in range(2, 101):
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             break
+#     else:
+#         print(num, end=" ")
+
+
+
+
+# Write a program to reverse a string without using slicing ([::-1]).
+
+text=input("Enter a String : ")
+for i in range(len(text)):
+    print((i))
