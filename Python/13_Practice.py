@@ -147,3 +147,17 @@ for i in list:
     if i not in unique_list:
         unique_list.append(i)
 print(unique_list)
+
+
+
+
+
+
+
+# Write a program to find the largest element in a list without using the built-in max() function.
+numbers = [45, 12, 89, 34, 67]
+large=numbers[0]
+for i in numbers:
+    if i>large:
+        large=i
+print(large)
