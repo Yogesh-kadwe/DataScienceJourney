@@ -115,11 +115,35 @@
 # print(rev)
 
 
-# Count the Number of Vowels
-text=input("Enter the String : ")
-count=0
-for i in text:
-    if i in "AEIOUaeiou":
-        count+=1
-print(count)
+# # Count the Number of Vowels
+# text=input("Enter the String : ")
+# count=0
+# for i in text:
+#     if i in "AEIOUaeiou":
+#         count+=1
+# print(count)
     
+
+
+
+# text = input("Enter String: ").lower()
+# count = 0
+# for ch in text:
+#     if ch in "aeiou":
+#         count += 1
+
+# print(count)
+
+
+
+
+
+
+
+# Write a program to remove duplicate elements from a list without using set().
+list=[10, 20, 10, 30, 20]
+unique_list=[]
+for i in list:
+    if i not in unique_list:
+        unique_list.append(i)
+print(unique_list)
