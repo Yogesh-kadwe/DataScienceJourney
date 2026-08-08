@@ -140,13 +140,13 @@
 
 
 
-# Write a program to remove duplicate elements from a list without using set().
-list=[10, 20, 10, 30, 20]
-unique_list=[]
-for i in list:
-    if i not in unique_list:
-        unique_list.append(i)
-print(unique_list)
+# # Write a program to remove duplicate elements from a list without using set().
+# list=[10, 20, 10, 30, 20]
+# unique_list=[]
+# for i in list:
+#     if i not in unique_list:
+#         unique_list.append(i)
+# print(unique_list)
 
 
 
@@ -154,10 +154,23 @@ print(unique_list)
 
 
 
-# Write a program to find the largest element in a list without using the built-in max() function.
-numbers = [45, 12, 89, 34, 67]
-large=numbers[0]
-for i in numbers:
-    if i>large:
-        large=i
-print(large)
+# # Write a program to find the largest element in a list without using the built-in max() function.
+# numbers = [45, 12, 89, 34, 67]
+# large=numbers[0]
+# for i in numbers:
+#     if i>large:
+#         large=i
+# print(large)
+
+
+
+
+text = input("Enter String: ").lower()
+
+frequency = {}
+for ch in text:
+    if ch in frequency:
+     print(ch)
+    else:
+        print(ch)
+
