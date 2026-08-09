@@ -165,12 +165,11 @@
 
 
 
-text = input("Enter String: ").lower()
 
-frequency = {}
-for ch in text:
-    if ch in frequency:
-     print(ch)
-    else:
-        print(ch)
 
+# Write a program to calculate the sum of digits of a number.
+num=int(input("Enter a Number : "))
+sum=0
+for i in range(1,num+1):
+    sum+=i
+print("Sum :",sum)
