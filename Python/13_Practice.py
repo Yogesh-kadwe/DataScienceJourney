@@ -167,9 +167,55 @@
 
 
 
-# Write a program to calculate the sum of digits of a number.
-num=int(input("Enter a Number : "))
-sum=0
-for i in range(1,num+1):
-    sum+=i
-print("Sum :",sum)
+# # Write a program to calculate the sum of digits of a number.
+# num=int(input("Enter a Number : "))
+# sum=0
+# for i in range(1,num+1):
+#     sum+=i
+# print("Sum :",sum)
+
+
+
+
+
+
+
+
+
+# # Count Frequency of Each Character
+# # Write a program that counts how many times each character appears in a string.
+# text = input("Enter String: ").lower()
+
+# frequency = {}
+
+# for ch in text:
+#     if ch in frequency:
+#         frequency[ch] += 1
+#     else:
+#         frequency[ch] = 1
+
+# for key, value in frequency.items():
+#     print(key, ":", value)
+
+
+
+
+
+
+
+
+# Count Frequency of Each Character
+# Write a program that counts how many times each character appears in a string.
+text = input("Enter String: ").lower()
+
+frequency = {}
+
+for ch in text:
+    if ch in frequency:
+        frequency[ch] += 1
+    else:
+        frequency[ch] = 1
+
+for key, value in frequency.items():
+    print(key, ":", value)
+
