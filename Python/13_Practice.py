@@ -182,26 +182,6 @@
 
 
 
-# # Count Frequency of Each Character
-# # Write a program that counts how many times each character appears in a string.
-# text = input("Enter String: ").lower()
-
-# frequency = {}
-
-# for ch in text:
-#     if ch in frequency:
-#         frequency[ch] += 1
-#     else:
-#         frequency[ch] = 1
-
-# for key, value in frequency.items():
-#     print(key, ":", value)
-
-
-
-
-
-
 
 
 # Count Frequency of Each Character
@@ -218,4 +198,20 @@ for ch in text:
 
 for key, value in frequency.items():
     print(key, ":", value)
+
+
+
+
+
+
+# Check if a number is a palindrome. 
+
+# number = input("Enter a number: ")
+
+# reverse = number[::-1]
+
+# if number == reverse:
+#     print("This number is Palindrome.")
+# else:
+#     print("This number is not Palindrome.")
 
