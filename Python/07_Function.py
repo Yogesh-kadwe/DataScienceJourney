@@ -206,6 +206,19 @@
 # numbers(10,20,30,40)
 
 
+
+# Write a function using *args that finds the largest number.
+# from functools import reduce
+
+# def largest(*num):
+#     result = reduce(lambda a, b: a if a > b else b, num)
+#     return result
+
+# print(largest(10, 50, 30, 80, 40))
+        
+
+
+
 # # Write a function using *args that returns the sum of all numbers.
 # def add(*number):
 #     total = 0
@@ -218,16 +231,6 @@
 
 
 
-# Write a function using *args that finds the largest number.
-# from functools import reduce
-
-# def largest(*num):
-#     result = reduce(lambda a, b: a if a > b else b, num)
-#     return result
-
-# print(largest(10, 50, 30, 80, 40))
-        
-
 # def largest(*num):
 #     return max(num)
 # print(largest(10, 50, 30, 80, 40))
@@ -238,25 +241,25 @@
                 # **kwargs (Keyword Arguments)
 
     # ---------------------------------------------#
-# Write a function using **kwargs that prints the entire dictionary.
-def show(**details):
-    print(details)
-show(name="Yogesh", age=20, city="Nagpur")
+# # Write a function using **kwargs that prints the entire dictionary.
+# def show(**details):
+#     print(details)
+# show(name="Yogesh", age=20, city="Nagpur")
 
 
 
-# Print each key and value.
-def show(**details):
-    for key,value in details.items():
-        print(key,":",value)
-show(name="Yogesh", age=20, city="Nagpur")
+# # Print each key and value.
+# def show(**details):
+#     for key,value in details.items():
+#         print(key,":",value)
+# show(name="Yogesh", age=20, city="Nagpur")
 
 
 
-# Write a function that prints only the "course" value.
-def student(**data):
-    print(data["course"])
-student(name="Yogesh", age=20, course="Data Science")
+# # Write a function that prints only the "course" value.
+# def student(**data):
+#     print(data["course"])
+# student(name="Yogesh", age=20, course="Data Science")
 
     # ---------------------------------------------#
 
