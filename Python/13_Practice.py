@@ -238,3 +238,18 @@ for key, value in frequency.items():
 #     fact *= i
 
 # print("the factorial of this number is : ",fact)
+
+
+
+
+
+
+# Write a program to calculate the factorial of a number.
+# num=int(input("Enter a number : "))
+# fact=1
+# i = 0
+# while i <num:
+#     i+=1
+#     fact *= i
+
+# print("the factorial of this number is : ",fact)
