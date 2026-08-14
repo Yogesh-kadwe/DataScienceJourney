@@ -105,3 +105,65 @@
 # String functions are SQL functions used to perform operations 
 # on character or text data, such as changing case, finding length, 
 # joining strings, and extracting portions of strings
+
+
+
+
+
+
+
+
+
+
+
+# # employee (Eid, Ename, street, city, Sal)
+# # Find all employees who live in the city Nagpur.
+
+# select *
+# from employee
+# where city in ('Nagpur');
+
+
+
+
+
+
+
+# # Find all customer names whose balance is between 10,000 and 20,000 at bank SBI.
+# # Customer (cid, cname, city, age)
+# # Account (accno, bid, bal)
+# # Depositor (cid, accno, cname)
+# # Loan (loanno, bid, lamt)
+# # Borrower (cid, loanno, cname)
+# # Branch (bid, bname, city)
+
+# SELECT D.cname
+# FROM Depositor D
+# JOIN Account A
+#     ON D.accno = A.accno
+# JOIN Branch B
+#     ON A.bid = B.bid
+# WHERE A.bal BETWEEN 10000 AND 20000
+#   AND B.bname = 'SBI';
+
+
+
+
+
+
+# # Find the second largest amount of balance.
+# SELECT bal
+# FROM Account
+# ORDER BY bal DESC
+# LIMIT 1 OFFSET 1;
+
+
+
+
+
+# Find the total loan amount given by SBI.
+# Loan (loanno, bid, lamt)
+# Branch (bid, bname, city)
+
+select sum(lamt)
+from Loan
