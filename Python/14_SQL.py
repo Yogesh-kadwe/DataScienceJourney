@@ -158,12 +158,11 @@
 # LIMIT 1 OFFSET 1;
 
 
-
-
-
 # Find the total loan amount given by SBI.
 # Loan (loanno, bid, lamt)
 # Branch (bid, bname, city)
 
 select sum(lamt)
-from Loan
+from Loans
+
+
