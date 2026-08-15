@@ -162,7 +162,7 @@
 # Loan (loanno, bid, lamt)
 # Branch (bid, bname, city)
 
-select sum(lamt)
-from Loans
+# select sum(lamt)
+# from Loans
 
 
